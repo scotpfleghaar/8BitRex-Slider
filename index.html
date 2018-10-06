@@ -2936,16 +2936,18 @@
         prettify_separator: ",",
         values_separator: " - "
     }
-    var target = "input[name='budget_range']";
+    var target = "#et_pb_contact_budget-range-slider_1";
 
     function setInputUp() {
         $(target).ready(function () {
-            $('.irs-hidden-input').css("cssText", "display: none !important;");
+            $('#et_pb_contact_budget-range-slider_1').css("cssText", "display: none !important;");
             $(target).addClass("js-range-slider");
             var $range = $(".js-range-slider");
             $range.ionRangeSlider(options);
         })
     }
+
+    // $('#et_pb_contact_budget-range-slider_1')
 
     $(document).ready(function () {
         setInputUp();
