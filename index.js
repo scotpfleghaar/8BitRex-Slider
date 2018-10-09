@@ -2537,7 +2537,7 @@ jQuery('body').append(`
         prettify_separator: ",",
         values_separator: " - "
     }
-    var target = "#et_pb_contact_budget-range-slider_1";
+    var target = "input#et_pb_contact_budget-range-slider_1";
 
     function setInputUp() {
         jQuery(target).ready(function () {
