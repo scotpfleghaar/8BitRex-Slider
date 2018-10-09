@@ -2541,7 +2541,7 @@ jQuery('body').append(`
 
     function setInputUp() {
         jQuery(target).ready(function () {
-            jQuery('#et_pb_contact_budget-range-slider_1').css("cssText", "display: none !important;");
+            jQuery('target').css("cssText", "opacity: 0;");
             jQuery(target).addClass("js-range-slider");
             var $range = jQuery(".js-range-slider");
             $range.ionRangeSlider(options);
