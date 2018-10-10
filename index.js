@@ -323,7 +323,7 @@ jQuery('body').append(`
                 decorate_both: true,
                 values_separator: " â€” ",
 
-                input_values_separator: ";",
+                input_values_separator: " to ",
 
                 disable: false,
                 block: false,
@@ -1715,11 +1715,11 @@ jQuery('body').append(`
                     this.$cache.input.data("from", this.result.from);
                 } else {
                     if (this.options.values.length) {
-                        this.$cache.input.prop("value", this.result.from_value + this.options.input_values_separator +
-                            this.result.to_value);
+                        this.$cache.input.prop("value", "$" + this.result.from_value + this.options.input_values_separator +
+                             "$" + this.result.to_value);
                     } else {
-                        this.$cache.input.prop("value", this.result.from + this.options.input_values_separator +
-                            this.result.to);
+                        this.$cache.input.prop("value",  "$" + this.result.from + this.options.input_values_separator +
+                             "$" + this.result.to);
                     }
                     this.$cache.input.data("from", this.result.from);
                     this.$cache.input.data("to", this.result.to);
